@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#page {
+    padding: 65px 0 30px 0;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+nav ul {
+    width: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#home {
+    font-weight: 700px;
+    color: #1F1534;
+}
+
+.navegation {
+    color: #7D7987;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+h1 {
+    max-width: 489px;
+    color: #000;
+    font-family: Mulish;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+}
+
+span {
+    color: #89C5CC;
+    font-weight: 700;
+}
+
+#text p {
+    width: 438px;
+    color: #7D7987;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+strong {
+    font-weight: 700px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #89f4ce;
+}
+
+footer {
+    text-align: center;
+    margin-top: 80px;
+}
+
+footer p {
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+footer a {
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+#balls {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
