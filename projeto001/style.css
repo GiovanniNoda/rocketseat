@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #7D7987;
+    text-align: center;
+    margin: 0;
+}
+
+#person {
+    margin-bottom: 72px;
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 49px;
+    line-height: 56px;
+    font-weight: normal;
+    margin-bottom: 32px;
+}
+
+#hero {
+    width: 592px;
+    margin: auto;
+    margin-bottom: 72px;
+}
+
+h1 span {
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+span, a {
+    color: #FF9900;
+}
+
+footer {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+#line {
+    width: 568px;
+    border: 1px solid #ECEFF2;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+#insta {
+    margin-right: 28px;
+}
+
+#balls {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
