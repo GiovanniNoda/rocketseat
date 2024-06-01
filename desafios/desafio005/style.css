@@ -16,10 +16,12 @@ body {
 
 #page {
     padding: 70px 20px 0;
+    margin: auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 nav {
@@ -36,16 +38,23 @@ ul {
     list-style-type: none;
     display: flex;
     flex-flow: row nowrap;
-    gap: 64px;
+    gap: 65px;
 }
 
 li a {
     color: white;
     font-family: "JetBrains Mono", sans-serif;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+li a:hover {
+    background-color: #403f59d3;
 }
 
 a {
     text-decoration: none;
+    transition-duration: 0.3s;
 }
 
 main {
@@ -94,6 +103,7 @@ h1 span {
 
 footer {
     margin-top: 150px;
+    
 }
 
 #line {
@@ -117,9 +127,9 @@ footer p, footer a {
 
 #padlock {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    margin: 20px;
+    bottom: 20px;
+    left: 20px;
+    
 }
 
 
@@ -137,21 +147,34 @@ footer p, footer a {
    #text {
     margin-top: 50px;
    }
+
+   #padlock {
+    position: relative;
+    width: 51px;
+    left: 0;
+    margin: auto;
+   }
+
+   footer {
+    display: flex;
+    flex-flow: column nowrap;
+   }
 } 
 
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 565px) {
     nav {
         flex-flow: row wrap;
     }
 
     ul {
         margin-top: 30px;
+        margin: 30px auto 0;
     }
 }
 
 @media screen and (max-width: 400px) {
     ul {
-        gap: 30px;
+        gap: 20px;
     }
 }
 
