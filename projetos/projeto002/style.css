@@ -33,11 +33,6 @@ a {
     text-decoration: none;
 }
 
-#home {
-    font-weight: 700px;
-    color: #1F1534;
-}
-
 .navegation {
     color: #7D7987;
     font-family: "Open Sans";
@@ -51,6 +46,7 @@ a {
 
 .navegation:hover {
     background-color: rgba(216, 216, 216, 0.506);
+    color: #1F1534;
     font-size: 1em;
     font-weight: bold;
     transition-duration: 0.3s;
