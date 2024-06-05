@@ -87,6 +87,7 @@ fieldset legend {
     line-height: 24px;
     color: #4E4958;
     margin-bottom: 8px;
+    margin-top: 24px;
 }
 
 .input-wrapper label span {
@@ -108,3 +109,4 @@ fieldset legend {
     color: #C1BCCC;
 }
 /* teve que ser posto a fonte-family pq o input, button, select e txtarea devem ser postos o tipo de fonte dentro da pr'pria tag */
+
