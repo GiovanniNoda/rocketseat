@@ -9,7 +9,7 @@
 }
 
 :root {
-    --cor0: #535971; /*cor header*/
+    --cor0: #535971; /*cor header, legend e footer*/
     --cor1: #EFEFEF; /*cor body*/
     --cor2: #E6E6F0; /*cor linha e border input*/
     --cor3: #FAFAFC; /*cor fundo input*/
@@ -41,9 +41,162 @@ body::before {
     width: 750px;
     margin: auto;
     margin-top: 140px;
+    padding-bottom: 100px;
 }
 
 header h1 {
     text-transform: uppercase;
+    color: #FFF;
+    font-family: "Staatliches", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
+
+header p {
+    margin-top: 18px;
+    width: 417px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+form {
+    margin-top: 60px;
+    width: 100%;
+    background-color: white;
+    padding: 64px;
+    border-radius: 20px 20px 0 0;
+}
+
+fieldset {
+    border: none;
+}
+
+.legend {
+    color: var(--cor0);
+    text-transform: uppercase;
+    font-family: "Staatliches", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    border-bottom: 1px solid var(--cor2);
+    width: 100%;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+}
+
+.sublegend {
+    color: var(--cor0);
+    font-family: "Staatliches", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    border: none;
+}
+    
+.input-name {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+        
+.input-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 16px;
+}
+
+.input-name input {
+    width: 300px;
+}
+            
+.input-wrapper label {
+    color: var(--cor4);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 8px;
+}
+
+.input-wrapper span {
+    color: var(--cor5);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 6px;
+}
+
+.input-wrapper span:hover {
+    color: #74717a;
+}
+
+.input-wrapper input {
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid var(--cor2);
+    background-color: var(--cor3);
+    font-size: 16px;
+    color: var(--cor4);
+    padding: 12px;
+}
+
+.sublegend {
+    padding: 0;
+    padding-bottom: 8px;
+}
+
+.date-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.date-wrapper > .input-wrapper > input{
+    width: 300px;
+}
+
+.time-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+
+.time-wrapper > .input-wrapper > input {
+    width: 140px;
+}
+
+footer {
+    height: 160px;
+    background-color: var(--cor0);
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 608px;
+    background-color: var(--cor6);
+    border-radius: 20px;
+    border: none;
+    color: #FFF;
+    font-family: "Staatliches", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0395a;
+}
+
+
 
