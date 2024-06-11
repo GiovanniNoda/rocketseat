@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Epilogue", sans-serif;
+    background-color: #ECE9FD;
+    padding: 6.0rem 2.5rem 6.5rem 2.5rem;
+}
+
+main {
+    max-width: 33rem;
+    margin: auto;
+}
+
+#p1 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem; 
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #7158EF;
+    margin-bottom: 1.7rem;
+}
+
+h1 {
+    font-size: 4.0rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 4.8rem;
+    color: #090039;
+    
+    margin-bottom: 1.5rem;
+}
+
+#p2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    color: rgba(10, 0, 57, 0.64);
+    margin-bottom: 3.2rem;
+}
+
+a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    color: #090039;
+    text-decoration: none;
+}
+
+#s2 {
+    margin-top: 7.2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+span {
+    font-size: 7.2rem;
+    font-weight: 800;
+    line-height: 8.0rem; 
+    color: #090039;
+    letter-spacing: -2px;
+}
+
+li {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    color: #090039;
+    max-width: 25.7rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 3.8rem;
+}
+
+li + li { /* significa que vai selecionar todo li que anterior a ele tem um li, ou seja nesse caso que só tem 3 vai selecionar o terceiro e o segundo */
+    margin-top: 3.2rem;
+}
+
+@media (min-width: 700px) {
+    body {
+        padding: 8rem;
+    }
+
+    main {
+       display: flex;
+       gap: 10rem;
+       max-width: 1020px;
+    }
+
+    #s1 {
+        max-width: 484px;
+    }
+
+    li {
+        gap: 5.3rem;
+        max-width: 450px;
+        align-items: center;
+    }
+}
