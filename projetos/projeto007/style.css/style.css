@@ -129,6 +129,7 @@ main h1 {
     transition-timing-function: ease-out;*/
 
     transition: all 0.2s ease-out;
+    display: block;
 }
 
 .item img:hover {
@@ -163,4 +164,38 @@ main h1 {
 footer {
     text-align: center;
     font-weight: 600;
+}
+
+header {
+    --startY: -100%;
+    animation: move .2s;
+}
+
+footer {
+    --startY: 100%;
+    animation: move .2s;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(var(--startY));
+    }
+}
+
+.item {
+    animation: appear .4s;
+    animation-delay: .4s;
+    animation-fill-mode: backwards;
+    animation-delay: var(--delay);
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    } /* isso é a configuração de como a animação irá copmeçar, ai ela vai até a estilização normal, ou na do 100% (from - to)*/
+
+    50% {
+        transform: scale(1.2);
+    } /* vai dar uma aumentada antes de voltar ao seu formato padrao ou no formato da configuração de 100% */
 }
