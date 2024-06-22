@@ -139,17 +139,27 @@ footer p {
 
 header {
     --startY: -100%;
-    animation: move 0.2s;
+    animation: move 0.4s;
 }
 
 footer {
     --startY: 100%;
-    animation: move 0.2s;
+    animation: move 0.4s;
 }
 
 @keyframes move {
     from {
         transform: translateY(var(--startY));
+    }
+}
+
+main, aside {
+    animation: fromBottom 0.4s backwards ease-in;
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
     }
 }
 
@@ -179,6 +189,12 @@ footer {
         column-gap: 3.4rem;
     }
 
+    main, aside {
+        max-width: initial;
+        padding: initial;
+        margin: initial;
+    }
+
     header {
         padding: 1.2rem 11.2rem;
         grid-area: header;
@@ -199,8 +215,9 @@ footer {
 
     main {
         grid-area: main;
-        max-width: 80rem;
+        width: 80rem;
         margin-bottom: 4rem;
+        margin-left: auto;
     }
 
     #container-h1-button {
@@ -220,6 +237,8 @@ footer {
     aside {
         grid-area: aside;
         margin-top: 0;
+        width: 40rem;
+
     }
 
     footer {
