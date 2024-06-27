@@ -34,4 +34,6 @@ const john = {
 }
 students[1] = john
 
-console.log(students)
+//console.log(students)
+
+console.log(students[0].age)
