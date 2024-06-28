@@ -5,7 +5,7 @@ function addition () {
     number1 = Number(number1)
     number2 = Number(number2)
 
-    if (isNaN(number1) && isNaN(number2)) {
+    if (isNaN(number1) || isNaN(number2)) {
         alert('Insira um número válido')
         addition()
     } else {
