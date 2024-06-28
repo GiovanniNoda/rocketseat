@@ -29,12 +29,13 @@ function checkGrade() {
 // calcular a média do aluno 
 
 let studentAverage = (grades[0] + grades[1] + grades[2]) / grades.length
+studentAverage = studentAverage.toFixed(2)
 
 // verificando se o aluno foi aprovado
 
 if (studentAverage >= 7) {
     alert(`Parabéns ${studentName}! Você foi aprovado com média ${studentAverage}`) 
 } else {
-    alert(`${studentName}, você reprovou, sua média foi ${studentAverage.toFixed(2)}`)
+    alert(`${studentName}, você reprovou, sua média foi ${studentAverage}`)
 }
 
