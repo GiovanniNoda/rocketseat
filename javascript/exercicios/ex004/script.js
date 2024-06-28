@@ -15,9 +15,11 @@ function checkGrade() {
         if (isNaN(grades[i]) || grades[i] < 0 || grades[i] > 10){
             correctGrade()
             function correctGrade() {
-                let newGrade = prompt(`Nota ${i + 1} inválida, por favor insira novamente:`)
+                let newGrade = Number(prompt(`Nota ${i + 1} inválida, por favor insira novamente:`))
                 if (isNaN(newGrade) || newGrade < 0 || newGrade > 10) {
                     correctGrade()
+                } else {
+                    grades[i] = newGrade
                 }
             }
         }
@@ -26,6 +28,13 @@ function checkGrade() {
 
 // calcular a média do aluno 
 
-let studentAverage = (grades[0] + grades[1] + grades[3]) / grades.length
+let studentAverage = (grades[0] + grades[1] + grades[2]) / grades.length
 
+// verificando se o aluno foi aprovado
+
+if (studentAverage >= 7) {
+    alert(`Parabéns ${studentName}! Você foi aprovado com média ${studentAverage}`) 
+} else {
+    alert(`${studentName}, você reprovou, sua média foi ${studentAverage.toFixed(2)}`)
+}
 
