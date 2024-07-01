@@ -10,6 +10,8 @@ altura
 Escreva uma lista contendo o nome dos pacientes.
 */
 
+// calcular imc dos pacientes peso / alturaˆ2
+
 const patients = [
     {
         name: "Luiz",
@@ -39,8 +41,17 @@ let patientsName = []
 } */
 // pode ser feito usando o for of também
 
-for (let patient of patients) {
+/*for (let patient of patients) {
     patientsName.push(patient.name)
 }
 
-alert(patientsName)
+alert(patientsName) */
+
+function printPatientsIMC(patient) {
+   return `Paciente ${patient.name} possui o IMC de ${(patient.weight / (patient.height / 100) ** 2).toFixed(2)}`
+}
+
+for (let patient of patients) {
+   let IMCmessage = printPatientsIMC(patient)
+   alert(IMCmessage)
+}
